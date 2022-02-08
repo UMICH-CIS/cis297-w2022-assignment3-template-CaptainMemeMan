@@ -10,10 +10,10 @@ namespace BankApplication
     {
         private decimal IntrestRate;
          
-        public SavingAccount(decimal bal, decimal Intrest)
+        public SavingAccount(decimal money, decimal Intrest): base(money)
         {
             IntrestRate = Intrest;
-            Balances = bal; 
+            Balances = money; 
               
         }
 

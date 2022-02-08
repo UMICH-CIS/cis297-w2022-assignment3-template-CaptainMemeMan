@@ -9,8 +9,8 @@ namespace BankApplication
     public class Account
     {
         private decimal balance;
-        public decimal money; 
-        public Account()
+        //public decimal money; 
+        public Account(decimal money)
         {
             balance = money;
         }

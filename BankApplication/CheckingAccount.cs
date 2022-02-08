@@ -9,9 +9,9 @@ namespace BankApplication
     class CheckingAccount: Account
     {
         private decimal fee;
-        CheckingAccount(decimal del, decimal setfee)
+       public CheckingAccount(decimal money, decimal setfee): base(money)
         {
-            Balances = del;
+            Balances = money;
             fee = setfee; 
         }
         public override void Credit(decimal money)
